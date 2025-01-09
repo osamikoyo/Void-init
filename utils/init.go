@@ -30,7 +30,7 @@ func Init(name string) error {
 }
 
 func Install(path string) error {
-	result := C.system(C.CString(fmt.Sprintf("go install %s")))
+	result := C.system(C.CString(fmt.Sprintf("go install %s", path)))
 	if int(result) == 1 {
 		return errors.New("code = 1")
 	}

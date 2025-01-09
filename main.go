@@ -10,6 +10,7 @@ import (
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Usage - void-init [command] [package name]")
+		return
 	}
 	switch os.Args[1]{
 	case "init":
