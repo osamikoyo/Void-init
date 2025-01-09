@@ -28,3 +28,12 @@ func Init(name string) error {
 
 	return nil
 }
+
+func Install(path string) error {
+	result := C.system(C.CString(fmt.Sprintf("go install %s")))
+	if int(result) == 1 {
+		return errors.New("code = 1")
+	}
+
+	return nil
+}
