@@ -13,11 +13,11 @@ A command-line tool for initializing and managing Void Linux packages and templa
 
 ```bash
 # Using go install
-go install github.com/osamikoyo/void-init-@latest
+go install github.com/osamikoyo/void-init@latest
 
 # Or clone and build manually
-git clone https://github.com/osamikoyo/void-init-.git
-cd void-init-
+git clone https://github.com/osamikoyo/void-init.git
+cd void-init
 go build
 ```
 
