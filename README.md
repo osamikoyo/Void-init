@@ -1,6 +1,7 @@
 # Void-init
 
-A command-line tool for initializing and managing Void Linux packages and templates efficiently.
+A command-line tool for initializing and managing Void Framework packages and templates efficiently.
+### Void is the other repository! - [click](https://github.com/osamikoyo/Void)
 
 ## Features
 
@@ -28,7 +29,7 @@ go build
 void-initer init [package-name]
 
 # Install a package
-void-initer install [package-name]
+void-initer install [path-to-your-main.go]
 ```
 
 ### Basic Commands
@@ -38,7 +39,7 @@ void-initer install [package-name]
 void-initer init mypackage
 
 # Install a package
-void-initer install mypackage
+void-initer install .
 
 # Show help
 void-initer --help

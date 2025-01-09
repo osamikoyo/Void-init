@@ -7,6 +7,16 @@ import (
 	"github.com/osamikoyo/void-init/utils"
 )
 
+func printHelp(){
+	fmt.Println(`
+Usage:
+
+void-init init [package-name]
+
+void-init install [path-to-main.go]
+	`)
+}
+
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Usage - void-init [command] [package name]")
@@ -17,5 +27,7 @@ func main() {
 		utils.Init(os.Args[2])
 	case "install":
 		utils.Install(os.Args[2])
+	case "--help":
+		printHelp()	
 	}
 }
